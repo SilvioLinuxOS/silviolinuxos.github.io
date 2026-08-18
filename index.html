@@ -1,0 +1,302 @@
+<!--
+SilvioLinux Blue Dark site
+Files included below (copy each section into its own file):
+- index.html
+- baixar.html
+- repositorio.html
+- wiki.html
+- docs.html
+
+This is a minimal, responsive HTML/CSS multi-page template (blue-dark theme).
+Replace the placeholder download links with your Google Drive / Dropbox / Mega direct links.
+-->
+
+<!-- ========================= index.html ========================= -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SilvioLinux — Início</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --bg:#071023; /* very dark blue */
+      --panel:#0f1a2b;
+      --accent:#1e90ff; /* blue */
+      --muted:#9fb4d9;
+      --danger:#e04b4b; /* red */
+      --warn:#ff8f3b; /* orange */
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono";
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg),#041426);color:var(--muted);min-height:100vh}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);backdrop-filter: blur(6px)}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4fb3ff);display:flex;align-items:center;justify-content:center;color:#021229;font-weight:700;font-family:var(--mono)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;padding:8px 10px;border-radius:8px}
+    nav a:hover{background:var(--glass);color:var(--accent)}
+    main{padding:36px;max-width:1100px;margin:28px auto}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{color:#eaf6ff;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 16px}
+    .download-buttons{display:flex;flex-direction:column;gap:10px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--muted);text-decoration:none;font-weight:600}
+    .btn:hover{transform:translateY(-2px)}
+    .btn .dot{width:10px;height:10px;border-radius:50%}
+    .gdrive .dot{background:linear-gradient(90deg,#2aa7ff,#1e90ff)}
+    .dropbox .dot{background:linear-gradient(90deg,#0055ff,#00a3ff)}
+    .mega .dot{background:linear-gradient(90deg,#ff0066,#ff4d94)}
+    .specs{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px 10px;text-align:left}
+    thead th{color:var(--muted);font-size:13px}
+    tbody tr{border-top:1px solid rgba(255,255,255,0.02)}
+    .status{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;font-weight:700}
+    .status-blue{background:rgba(30,144,255,0.12);color:var(--accent);border:1px solid rgba(30,144,255,0.06)}
+    .status-orange{background:rgba(255,143,59,0.08);color:var(--warn);border:1px solid rgba(255,143,59,0.05)}
+    .status-red{background:rgba(224,75,75,0.08);color:var(--danger);border:1px solid rgba(224,75,75,0.05)}
+    footer{padding:18px 28px;color:var(--muted);text-align:center;font-size:14px}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.specs{grid-template-columns:1fr}.download-buttons{flex-direction:row}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">SL</div>
+      <div>
+        <div style="font-weight:700;color:#eaf6ff">SilvioLinux</div>
+        <div style="font-size:12px;color:var(--muted)">Blue Dark — Gentoo (OpenRC) & Arch (systemd)</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="baixar.html">Baixar</a>
+      <a href="repositorio.html">Repositório</a>
+      <a href="wiki.html">Wiki</a>
+      <a href="docs.html">Documentação</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <section class="card">
+        <h1>SilvioLinux — Blue Dark</h1>
+        <p class="lead">Distro personalizada baseada em yocto project (busybox-init) Escolha a Versão para sua arquitetura: i586 / x86_64 / ARM32 / ARM64 / PPC / PPC64 / RISCV32/ RISCV64 / MIPS / MIPS64 / M68K / .</p>
+
+        <div class="specs">
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project - CoreDesktop (GNOME + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>x86_64/PPC64/RISCV64/MIPS64/ARM64</td></tr>
+                <tr><td>RAM</td><td>6 GB (mínimo) / 8 GB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>20 GB (instalação mínima) / 25 GB (Recomendado)</td></tr>
+                <tr><td>Placa de Vídeo</td><td>RX400 (instalação mínima) / RX550 (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>GNOME</td></tr>
+                <tr><td>Gerenciador de Arquivos</td><td>Nautilus</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>PulseAudio</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>NetworkManager</td></tr>
+                <tr><td>Navegador de Internet</td><td>Firefox Developer Edition</td></tr>
+                <tr><td>Emulador de Terminal</td><td>GNOME Terminal</td></tr>
+                <tr><td>Display manager</td><td>GDM</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        <div class="specs">
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project - CoreDeveloper (GNOME + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>x86_64/PPC64/RISCV64/MIPS64/ARM64</td></tr>
+                <tr><td>RAM</td><td>4 GB (mínimo) / 6 GB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>20 GB (instalação mínima) / 25 GB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>GNOME</td></tr>
+                <tr><td>Gerenciador de Arquivos</td><td>Nautilus</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>PulseAudio</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>NetworkManager</td></tr>
+                <tr><td>Navegador de Internet</td><td>Firefox Developer Edition</td></tr>
+                <tr><td>Emulador de Terminal</td><td>GNOME Terminal</td></tr>
+                <tr><td>Display manager</td><td>GDM</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project - CoreUltraLite (IceWM + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos / Recomendados</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>i586/ARM32/PPC/RISCV32/MIPS/M68K</td></tr>
+                <tr><td>RAM</td><td>12 MB (mínimo) / 24 MB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>240 MB (mínimo) / 350 MB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>IceWM</td></tr>
+                <tr><td>Gerenciador de Arquivos</td><td>MC</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>ALSA / ALSA-UTILS</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>IWD</td></tr>
+                <tr><td>Gerenciador de Tarefas</td><td>HTop</td></tr>
+                <tr><td>Navegador de Internet</td><td>Dillo</td></tr>
+                <tr><td>Emulador de Terminal</td><td>UXTerm</td></tr>
+                <tr><td>Display manager</td><td>Greetd</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="specs">
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project - CoreUltraLite (IceWM + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>x86_64/RISCV64/MIPS64/ARM64</td></tr>
+                <tr><td>RAM</td><td>256 MB (mínimo) / 512 MB (Recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>1 GB (instalação mínima) / 2 GB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>IceWM</td></tr>
+                <tr><td>Gerenciador de Arquivos</td><td>Thunar</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>ALSA / ALSA-UTILS / ALSA-PLUGINS</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>IWD</td></tr>
+                <tr><td>Gerenciador de Tarefas</td><td>Xfce4-TaskManager</td></tr>
+                <tr><td>Navegador de Internet</td><td>LuaKit</td></tr>
+                <tr><td>Emulador de Terminal</td><td>Xfce4-Terminal</td></tr>
+                <tr><td>Display manager</td><td>Greetd</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project (CoreBase + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos / Recomendados</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>i586/ARM32/PPC/RISCV32/MIPS/M68K</td></tr>
+                <tr><td>RAM</td><td>128 MB (mínimo) / 160 MB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>500 MB (mínimo) / 1 GB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>Não Usa</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>ALSA / ALSA-UTILS / ALSA-PLUGINS</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>IWD</td></tr>
+                <tr><td>Gerenciador de Tarefas</td><td>htop</td></tr>
+                <tr><td>Navegador de Internet</td><td>Links / Lynx</td></tr>
+                <tr><td>Display manager</td><td>Não Usa</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project (CoreBase + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos / Recomendados</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>x86_64/ARM64/PPC64/RISCV64/MIPS64</td></tr>
+                <tr><td>RAM</td><td>256 MB (mínimo) / 512 MB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>1 GB (mínimo) / 2 GB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>Não Usa</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>ALSA / ALSA-UTILS / ALSA-PLUGINS</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>IWD</td></tr>
+                <tr><td>Gerenciador de Tarefas</td><td>htop</td></tr>
+                <tr><td>Navegador de Internet</td><td>Links / Lynx</td></tr>
+                <tr><td>Display manager</td><td>Não Usa</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project (CoreBase + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos / Recomendados</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>i586/ARM32/PPC/RISCV32/MIPS/M68K</td></tr>
+                <tr><td>RAM</td><td>12 MB (mínimo) / 24 MB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>240 MB (mínimo) / 350 MB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>Não Usa</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>ALSA / ALSA-UTILS</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>IWD</td></tr>
+                <tr><td>Gerenciador de Tarefas</td><td>htop</td></tr>
+                <tr><td>Navegador de Internet</td><td>Links / Lynx</td></tr>
+                <tr><td>Display manager</td><td>Não Usa</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+          <div class="card">
+            <h3 style="margin-top:0;color:#dff0ff">Yocto Project (CoreMinimal + BusyBox-Init)</h3>
+            <table>
+              <thead><tr><th>Requisitos</th><th>Mínimos / Recomendados</th></tr></thead>
+              <tbody>
+                <tr><td>Arquiteturas suportadas</td><td>x86_64/ARM64/PPC64/RISCV64/MIPS64</td></tr>
+                <tr><td>RAM</td><td>256 MB (mínimo) / 512 MB (recomendado)</td></tr>
+                <tr><td>Espaço em disco</td><td>500 MB (mínimo) / 1 GB (Recomendado)</td></tr>
+                <tr><td>Gerenciador de janelas</td><td>Não Usa</td></tr>
+                <tr><td>Gerenciador de Áudio</td><td>ALSA / ALSA-UTILS / ALSA-PLUGINS</td></tr>
+                <tr><td>Gerenciador de Internet</td><td>IWD</td></tr>
+                <tr><td>Gerenciador de Tarefas</td><td>htop</td></tr>
+                <tr><td>Navegador de Internet</td><td>Links / Lynx</td></tr>
+                <tr><td>Display manager</td><td>Não Usa</td></tr>
+                <tr><td>Instalador</td><td>SilvioLinux-Installer</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="margin-top:16px">
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <span class="status status-blue">● Suportadas (recebendo atualizações)</span>
+            <span class="status status-orange">● EOL (fim do suporte)</span>
+            <span class="status status-red">● Descontinuadas / Obsoletas</span>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="card">
+        <h3 style="margin-top:0;color:#dff0ff">Downloads</h3>
+        <div class="download-buttons">
+          <a class="btn gdrive" href="#" title="Download via Google Drive">
+            <span class="dot"></span>
+            Download via Google Drive
+          </a>
+          <a class="btn dropbox" href="#" title="Download via Dropbox">
+            <span class="dot"></span>
+            Download via Dropbox
+          </a>
+          <a class="btn mega" href="#" title="Download via Mega">
+            <span class="dot"></span>
+            Download via Mega
+          </a>
+        </div>
+
+        <div style="margin-top:18px;font-size:13px;color:var(--muted)">
+          <strong>Arquivos:</strong> ISO / IMG / WIC / Torrent<br/>
+          Atualize os links nos arquivos HTML: baixar.html contém os botões específicos.
+        </div>
+      </aside>
+    </div>
+
+    <section style="margin-top:28px" class="card">
+      <h2 style="margin:0 0 12px;color:#eaf6ff">Visão geral</h2>
+      <p style="margin:0;color:var(--muted)">Este site fornece imagens e documentação para as variantes SilvioLinux baseadas em Gentoo (OpenRC) e Arch Linux (systemd). Use o menu para acessar downloads, repositório, wiki e docs. Para publicar arquivos no Google Drive/Dropbox/Mega, substitua os atributos <code>href</code> nos links de baixar.html com links diretos (ou wrappers que redirecionem para o arquivo correto).</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © SilvioLinux — Template Blue Dark • Feito em HTML & CSS • Personalize os links de download
+  </footer>
+</body>
+</html>

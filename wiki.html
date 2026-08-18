@@ -1,0 +1,44 @@
+<!-- ========================= wiki.html ========================= -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SilvioLinux — Wiki</title>
+  <style>
+    :root{--bg:#071023;--muted:#9fb4d9}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#041426);color:var(--muted)}header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+    main{padding:36px;max-width:1000px;margin:28px auto}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:12px}
+    code{background:#031123;padding:6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;background:linear-gradient(135deg,#1e90ff,#4fb3ff);border-radius:8px;color:#021229;display:flex;align-items:center;justify-content:center;font-weight:700">SL</div><div style="font-weight:700;color:#eaf6ff">SilvioLinux</div></div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="baixar.html">Baixar</a>
+      <a href="repositorio.html">Repositório</a>
+      <a href="wiki.html">Wiki</a>
+      <a href="docs.html">Documentação</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Wiki</h1>
+    <div class="card">
+      <h3>Como usar</h3>
+      <ol>
+        <li>Baixe a imagem na página <a href="baixar.html">Baixar</a>.</li>
+        <li>Verifique o checksum SHA256.</li>
+        <li>Grave em pendrive com <code>dd</code> ou use <code>balenaEtcher</code>.</li>
+        <li>Instale: escolha Yocto (BusyBox-Init) e execute o instalador.</li>
+      </ol>
+
+      <h3>Dicas de instalação (Gentoo)</h3>
+      <p>Use o Poky automatizados para construir a imagem. Documente o processo no repositório.</p>
+    </div>
+  </main>
+  <footer>© SilvioLinux — Wiki</footer>
+</body>
+</html>
