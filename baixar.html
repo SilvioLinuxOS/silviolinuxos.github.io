@@ -1,0 +1,124 @@
+<!-- ========================= baixar.html ========================= -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SilvioLinux — Baixar</title>
+  <style>
+    /* Reuse same CSS as index (for brevity in template) */
+    :root{--bg:#071023;--panel:#0f1a2b;--accent:#1e90ff;--muted:#9fb4d9;--danger:#e04b4b;--warn:#ff8f3b;--glass: rgba(255,255,255,0.03);--radius:12px;--mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono"}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#041426);color:var(--muted)}header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent)}nav a{color:var(--muted);text-decoration:none;margin-left:18px;padding:8px 10px;border-radius:8px}main{padding:36px;max-width:1000px;margin:28px auto}h1{color:#eaf6ff}footer{padding:18px 28px;color:var(--muted);text-align:center}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:18px;border-radius:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--muted);text-decoration:none;font-weight:600}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;background:linear-gradient(135deg,var(--accent),#4fb3ff);border-radius:8px;color:#021229;display:flex;align-items:center;justify-content:center;font-weight:700">SL</div><div style="font-weight:700;color:#eaf6ff">SilvioLinux</div></div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="baixar.html">Baixar</a>
+      <a href="repositorio.html">Repositório</a>
+      <a href="wiki.html">Wiki</a>
+      <a href="docs.html">Documentação</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Baixar</h1>
+    <p style="color:var(--muted)">Escolha a variante e a arquitetura. Os links abaixo são exemplos — substitua com os links reais do Google Drive / Dropbox / Mega.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Yocto CoreBase (BusyBox-Init) — i686</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem Base construída para i686.</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#" title="Yocto i686 via Google Drive">Google Drive</a>
+          <a class="btn" href="#" title="Yocto i686 via Terabox">Dropbox</a>
+          <a class="btn" href="#" title="Yocto i686 via Mega">Mega</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>CoreBase (BusyBox-Init) — x86_64</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem Base para x86_64.</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">Terabox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>CoreDesktop (BusyBox-Init) — x86_64</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem Com GNOME e BusyBox-Init para x86_64.</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">TeraBox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>CoreDeveloper (BusyBox-Init) — x86_64</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem Com GNOME e BusyBox-Init para x86_64.</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">Terabox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>CoreUltraLite (BusyBox-Init) — i586</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem CoreUltraLite Com IceWM e BusyBox-Init Para (i586).</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">Terabox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3>CoreUltraLite (BusyBox-Init) — x86_64</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem CoreUltraLite Com IceWM e BusyBox-Init Para (x86_64).</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">Terabox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3>CoreMinimal (BusyBox-Init) — i586</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem Minimal Para (i586).</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">Terabox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>CoreMinimal (BusyBox-Init) — x86_64</h3>
+        <p style="margin-top:6px;color:var(--muted)">Imagem Minimal Para (x86_64).</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a class="btn" href="#">Google Drive</a>
+          <a class="btn" href="#">Terabox</a>
+          <a class="btn" href="#">Mega</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Checksums & Torrents</h3>
+        <p style="color:var(--muted)">Inclua checksums SHA256 e arquivos torrent para cada imagem. Ex: <code>sha256sum silviolinux-yocto-i686.iso</code></p>
+      </div>
+    </div>
+
+  </main>
+  <footer>© SilvioLinux — Baixar</footer>
+</body>
+</html>
+
